@@ -11,6 +11,11 @@ export default class ContactForm extends Component {
 
     const { name, number } = this.state;
     this.props.onSubmit({ name, number });
+
+    this.setState({
+      name: "",
+      number: "",
+    });
   };
 
   handleInputChange = (e) => {

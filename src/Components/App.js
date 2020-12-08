@@ -47,11 +47,6 @@ class App extends Component {
     this.setState(({ contacts }) => ({
       contacts: [...contacts, contactNew],
     }));
-
-    this.setState({
-      name: "",
-      number: "",
-    });
   };
 
   removeContact = (ContactId) => {
